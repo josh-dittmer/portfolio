@@ -15,7 +15,7 @@ export default function AboutSection() {
                         <Image src="/img/headshot.jpg" width={250} height={250} alt="Scroll for more!" />
                     </div>
                     <div className="flex justify-center">
-                        <p className="p-3 text-md max-w-md text-gray-500 leading-relaxed">I have always loved learning about new technologies and finding creative ways to use them. Over time, this curiosity has grown into years of committment to learning various disciplines, including web development with TypeScript, React, and Next.js, embedded development with C++, and network programming. When I'm not at the computer, you can find me hiking, reading, or playing the guitar.</p>
+                        <p className="p-3 text-md max-w-md text-gray-500 leading-relaxed">I&apos;ve always loved learning about new technologies and finding creative ways to use them. Over time, this curiosity has grown into years of committment to learning various disciplines, including web development with TypeScript, React, and Next.js, embedded development with C++, and network programming. When I&apos;m not at the computer, you can find me hiking, reading, or playing the guitar.</p>
                     </div>
                 </div>
                 <div className="p-10">

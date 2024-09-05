@@ -38,8 +38,8 @@ export default function TitleSection({ name, description, techUsed, demoSrc, git
                 <p className="text-white text-md">Built with:</p>
             </div>
             <div className="flex flex-wrap justify-center pt-2">
-                {techUsed.map((name) => {
-                    return <p className="text-white bg-blue-500 p-2 rounded mr-1 mt-1">{name}</p>
+                {techUsed.map((name, index) => {
+                    return <p key={index} className="text-white bg-blue-500 p-2 rounded mr-1 mt-1">{name}</p>
                 })}
             </div>
         </div>

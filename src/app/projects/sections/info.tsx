@@ -36,8 +36,8 @@ function InfoCard({ data }: { data: InfoCardData }) {
 export default function InfoSection({ cards }: { cards: Array<InfoCardData> }) {
     return (
         <div className="lg:grid lg:grid-cols-2 lg:grid-rows-2 grid-flow-col">
-            {cards.map((data) => {
-                return <InfoCard data={data} />
+            {cards.map((data, index) => {
+                return <InfoCard key={index} data={data} />
             })}
         </div>
     )

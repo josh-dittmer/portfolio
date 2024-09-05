@@ -48,7 +48,7 @@ export default function IntroSection() {
                         <span className={displayCursor ? '' : 'hidden'}>|</span>    
                     </h1>
                     <br />
-                    <h1 className="text-2xl text-white animate-fade-in">I'm an aspiring software engineer.</h1>
+                    <h1 className="text-2xl text-white animate-fade-in">I&apos;m an aspiring software engineer.</h1>
                     <br />
                     <Link href="#about" scroll={true}>
                         <button className="p-3 border-2 border-white rounded animate-fade-in animate-hover-grow">

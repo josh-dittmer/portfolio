@@ -44,8 +44,8 @@ function InfoContainer({ name, description, techUsed, infoSrc, githubSrc, orient
                 </Link>
             </div>
             <div className="flex-wrap max-w-sm pt-3 z-0 hidden lg:flex">
-                {techUsed.map((name) => {
-                    return <span className="text-white text-sm bg-blue-500 p-2 rounded mt-1 mr-1">{name}</span>
+                {techUsed.map((name, index) => {
+                    return <span key={index} className="text-white text-sm bg-blue-500 p-2 rounded mt-1 mr-1">{name}</span>
                 })}
             </div>
         </div>
