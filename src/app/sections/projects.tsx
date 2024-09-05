@@ -1,7 +1,7 @@
 import ProjectCard from '@/app/sections/project_card'
 import { Orientation, Type } from '@/app/sections/project_card'
 
-import { FacebookCloneInfo, SmartHomeNetworkInfo, CustomizableDiscordBotInfo } from '@/app/projects/project_info'
+import { FacebookCloneInfo, SmartHomeNetworkInfo, CustomizableDiscordBotInfo, MemoryAllocatorInfo, PortfolioInfo } from '@/app/projects/project_info'
 
 export default function ProjectsSection() {
     return (
@@ -45,28 +45,28 @@ export default function ProjectsSection() {
                     />
                     <br />
                     <ProjectCard 
-                        name="Memory Manager" 
-                        description="A custom memory allocator meant to mimic the C memory API. Includes recreations of malloc(), free(), memcpy(), etc."
-                        src="/img/test_image.webp"
+                        name={MemoryAllocatorInfo.name}
+                        description={MemoryAllocatorInfo.description}
+                        src="/img/demos/memory_allocator/memory_dump.png"
                         type={Type.Image}
-                        techUsed={[]}
-                        infoSrc="#"
-                        githubSrc="#"
+                        techUsed={MemoryAllocatorInfo.techUsed}
+                        infoSrc="/projects/memory_allocator"
+                        githubSrc={MemoryAllocatorInfo.githubSrc}
                         orientation={Orientation.Right}
                     />
                     <br />
                     <ProjectCard 
-                        name="Portfolio Website" 
-                        description="My portfolio website built with React, Next.js, and Tailwind. I hope you've been liking it!"
-                        src="/img/test_image.webp"
+                        name={PortfolioInfo.name}
+                        description={PortfolioInfo.description}
+                        src="/img/demos/portfolio/portfolio.png"
                         type={Type.Image}
-                        techUsed={[]}
-                        infoSrc="#"
-                        githubSrc="#"
+                        techUsed={PortfolioInfo.techUsed}
+                        infoSrc=""
+                        githubSrc={PortfolioInfo.githubSrc}
                         orientation={Orientation.Left}
                     />
                 </div>
-                <div className="">
+                <div className="pb-10">
                 </div>
             </div>
         </div>

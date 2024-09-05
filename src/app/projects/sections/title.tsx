@@ -17,13 +17,15 @@ export default function TitleSection({ name, description, techUsed, demoSrc, git
                 <p className="max-w-md text-lg text-white">{description}</p>
             </div>
             <div className="flex justify-center">
-                <div className="grid grid-cols-2 gap-2">
-                    <Link href={demoSrc}>
-                        <div className={'flex justify-center items-center p-2 rounded text-center ' + (demoSrc === '' ? 'bg-blue-400' : 'bg-blue-400 hover:bg-blue-500')}>
-                            <Image src="/img/live.svg" width={25} height={25} alt="Live demo"></Image>
-                            <p className={'ml-1 font-bold ' + (demoSrc === '' ? 'text-blue-200' : 'text-white')}>{demoSrc === '' ? 'Demo coming soon!' : 'Live Demo'}</p>
-                        </div>
-                    </Link>
+                <div className={(demoSrc === '' ? '' : 'grid grid-cols-2 gap-2')}>
+                    {demoSrc !== '' && (
+                        <Link href={demoSrc}>
+                            <div className='flex justify-center items-center p-2 rounded text-center bg-blue-400 hover:bg-blue-500'>
+                                <Image src="/img/live.svg" width={25} height={25} alt="Live demo"></Image>
+                                <p className='ml-1 font-bold text-white'>Live Demo</p>
+                            </div>
+                        </Link>
+                    )}
                     <Link href={githubSrc}>
                         <div className="flex justify-center items-center bg-blue-400 hover:bg-blue-500 p-2 rounded text-center">
                             <Image src="/img/github.svg" width={25} height={25} alt="Live demo"></Image>

@@ -51,9 +51,9 @@ export default function IntroSection() {
                     <h1 className="text-2xl text-white animate-fade-in">I'm an aspiring software engineer.</h1>
                     <br />
                     <Link href="#about" scroll={true}>
-                        <button className="p-3 border-2 border-white rounded animate-fade-in">
+                        <button className="p-3 border-2 border-white rounded animate-fade-in animate-hover-grow">
                             <div className="flex">
-                                <span className="font-bold text-white mr-3">Check out my stuff</span>
+                                <span className="font-bold text-white mr-3">Check out my work!</span>
                                 <Image src="/img/scroll_arrow.svg" width={15} height={15} alt="Scroll down"></Image>
                             </div>
                         </button>

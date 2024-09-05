@@ -34,11 +34,13 @@ function InfoContainer({ name, description, techUsed, infoSrc, githubSrc, orient
             <h1 className="text-2xl text-white pb-1">{name}</h1>
             <p className="text-xs text-white max-w-sm pb-1">{description}</p>
             <div className="flex">
-                <Link className="mr-3" href={infoSrc}>
-                    <p className="text-sm text-white font-bold border-b-2 border-white">Learn More</p>
-                </Link>
+                {infoSrc !== '' && (
+                    <Link className="mr-3" href={infoSrc}>
+                        <p className="text-sm text-white font-bold border-b-2 border-white p-1 hover:border-blue-500">Learn More</p>
+                    </Link>
+                )}
                 <Link href={githubSrc}>
-                    <p className="text-sm text-white font-bold border-b-2 border-white">GitHub</p>
+                    <p className="text-sm text-white font-bold border-b-2 border-white p-1 hover:border-blue-500">GitHub</p>
                 </Link>
             </div>
             <div className="flex-wrap max-w-sm pt-3 z-0 hidden lg:flex">

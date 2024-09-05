@@ -16,9 +16,11 @@ function InfoCard({ data }: { data: InfoCardData }) {
         <div className="p-5">
             <div className="flex justify-center">
                 {data.type === Type.Image ? (
-                    <Image className="border-[10px] border-blue-400 rounded" src={data.src} width={720} height={680} alt="" />
+                    <div className="">
+                        <Image className="border-[10px] border-blue-400 rounded" src={data.src} width={800} height={600} alt="" />
+                    </div>
                 ) : (
-                    <video className="border-[10px] border-blue-400 rounded" width="720" height="680" controls>
+                    <video className="border-[10px] border-blue-400 rounded" width="800" height="600" controls>
                         <source src={data.src} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>

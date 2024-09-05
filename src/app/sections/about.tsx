@@ -12,10 +12,10 @@ export default function AboutSection() {
             <div className="lg:grid lg:grid-cols-2 grid-flow-col">
                 <div className="p-10">
                     <div className="pb-5 flex justify-center">
-                        <Image src="/img/test_image.webp" width={250} height={250} alt="Scroll for more!" />
+                        <Image src="/img/headshot.jpg" width={250} height={250} alt="Scroll for more!" />
                     </div>
                     <div className="flex justify-center">
-                        <p className="p-3 text-md max-w-md text-gray-500 leading-relaxed">My passion for technology began as a kid, taking apart old VCRs and other household electronics to see what makes them tick. As the years went by, my curiosity grew into years of committment to learning and utilizing various disciplines, including web development with JavaScript, React, and Next.js, embedded development with C++, and network programming. I love learning about new technologies and finding creative ways to use them. When I'm not at the computer, you can find me hiking, reading, or playing the guitar.</p>
+                        <p className="p-3 text-md max-w-md text-gray-500 leading-relaxed">I have always loved learning about new technologies and finding creative ways to use them. Over time, this curiosity has grown into years of committment to learning various disciplines, including web development with TypeScript, React, and Next.js, embedded development with C++, and network programming. When I'm not at the computer, you can find me hiking, reading, or playing the guitar.</p>
                     </div>
                 </div>
                 <div className="p-10">
@@ -47,10 +47,10 @@ export default function AboutSection() {
                                 <h3 className="text-lg font-semibold text-gray-900">Growing up</h3>
                                 <ul className="text-gray-400">
                                     <li className="pt-2">
-                                        <span className="mb-4 text-base font-normal">Spent childhood biking around the neighborhood and playing video games with friends</span>
+                                        <span className="mb-4 text-base font-normal">Spent childhood playing basketball and baseball</span>
                                     </li>
                                     <li className="pt-2">
-                                        <span className="mb-4 text-base font-normal">Earliest programming experience was following YouTube tutorials to make mods for Minecraft</span>
+                                        <span className="mb-4 text-base font-normal">Experimented with simple programming</span>
                                     </li>
                                 </ul>
                             </li>
@@ -68,18 +68,21 @@ export default function AboutSection() {
                                     <li className="pt-2">
                                         <span className="mb-4 text-base font-normal">Got first part-time job at Best Buy</span>
                                     </li>
-                                    <li className="pt-2">
-                                        <span className="mb-4 text-base font-normal">Graduated with honors</span>
-                                    </li>
                                 </ul>
                             </li>
                             <li className="mb-10 ms-4">
                                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
                                 <time className="mb-1 text-sm font-normal leading-none text-gray-500">2022 - present</time>
                                 <h3 className="text-lg font-semibold text-gray-900">Starting college</h3>
-                                <ul className="list-disc list-inside text-gray-400">
+                                <ul className="text-gray-400">
+                                <li className="pt-2">
+                                        <span className="mb-4 text-base font-normal">Began pursuing degree in Computer Science at San Jose State University</span>
+                                    </li>
                                     <li className="pt-2">
-                                        <span className="mb-4 text-base font-normal"></span>
+                                        <span className="mb-4 text-base font-normal">Joined clubs and organizations, including Video Game Development Club</span>
+                                    </li>
+                                    <li className="pt-2">
+                                        <span className="mb-4 text-base font-normal">Currently employed at AMC Theaters</span>
                                     </li>
                                 </ul>
                             </li>

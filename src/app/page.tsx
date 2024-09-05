@@ -3,6 +3,7 @@
 import IntroSection from '@/app/sections/intro'
 import AboutSection from '@/app/sections/about'
 import ProjectsSection from '@/app/sections/projects';
+import ContactSection from '@/app/sections/contact';
 
 export default function Home() {
 	return (
@@ -15,6 +16,9 @@ export default function Home() {
 			</div>
 			<div id="projects">
 				<ProjectsSection />
+			</div>
+			<div id="contact">
+				<ContactSection />
 			</div>
 		</div>
 	)

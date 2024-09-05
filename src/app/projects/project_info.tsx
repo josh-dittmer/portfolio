@@ -19,7 +19,7 @@ export const SmartHomeNetworkInfo: ProjectInfo = {
     description: 'Application allowing homemade smart home devices to be controlled from an online interface. Devices can be made with a custom C++ API.',
     techUsed: ['C++', 'TypeScript', 'React', 'Tailwind', 'Next.js', 'Express.js', 'SSL', 'WebSocket', 'Docker'],
     demoSrc: '',
-    githubSrc: ''
+    githubSrc: 'https://github.com/josh-dittmer/HomeController_v3-dev'
 };
 
 export const CustomizableDiscordBotInfo: ProjectInfo = {
@@ -29,3 +29,19 @@ export const CustomizableDiscordBotInfo: ProjectInfo = {
     demoSrc: 'https://discord.jditt.me/',
     githubSrc: 'https://github.com/josh-dittmer/JahBot'
 };
+
+export const MemoryAllocatorInfo: ProjectInfo = {
+    name: 'Memory Allocator',
+    description: 'A custom memory allocator meant to mimic the C memory API. Includes implementations of malloc(), free(), memcpy(), etc.',
+    techUsed: ['C', 'GCC', 'Docker', 'Linux'],
+    demoSrc: '',
+    githubSrc: 'https://github.com/josh-dittmer/memory-allocator'
+}
+
+export const PortfolioInfo: ProjectInfo = {
+    name: 'Portfolio Website',
+    description: 'My portfolio website built with React, Next.js, and Tailwind. I hope you\'ve been liking it!',
+    techUsed: ['TypeScript', 'React', 'Tailwind', 'Next.js', 'AWS'],
+    demoSrc: 'https://jditt.me/',
+    githubSrc: 'https://github.com/josh-dittmer/portfolio'
+}
