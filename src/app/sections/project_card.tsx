@@ -18,7 +18,7 @@ function ContentContainer({ src, type, orientation, infoSrc } : { src: string, t
                 {type === Type.Image ? (
                     <Image src={src} width={720} height={680} alt="Test" />
                 ) : (
-                    <video width="720" height="680" autoPlay muted loop>
+                    <video width="720" height="680" autoPlay playsInline muted loop>
                         <source src={src} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
